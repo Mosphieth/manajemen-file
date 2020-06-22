@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 20, 2020 at 01:34 PM
+-- Generation Time: Jun 22, 2020 at 08:10 AM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.11
 
@@ -38,14 +38,6 @@ CREATE TABLE `file` (
   `date_created` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `file`
---
-
-INSERT INTO `file` (`id`, `user_id`, `category`, `file_name`, `file`, `status`, `date_created`) VALUES
-(6, 1, '', 'test', 'test', 'Refused', 1590931641),
-(19, 2, 'Laporan', 'laporan2', 'KevinJunico_assignment_entrepreneur_grammar.pdf', 'Accepted', 1592583811);
-
 -- --------------------------------------------------------
 
 --
@@ -71,9 +63,7 @@ CREATE TABLE `user` (
 INSERT INTO `user` (`id`, `nama`, `email`, `image`, `password`, `role_id`, `is_active`, `date_created`, `code`) VALUES
 (1, 'dosen', 'dosen@gmail.com', 'default.png', '$2y$10$vxyeVTHgguKSZT7uDKyn1uCjgZBeAoO76bKBBgpV5AyNMN6mvokae', 3, 1, 1590819147, ''),
 (2, 'admin', 'admin@gmail.com', 'default.png', '$2y$10$yv8SwQuD5iIdw04z3jsN/uQI7MDSgG.yUI1ooxj/OCuKjruJRnnlO', 1, 1, 1590819681, ''),
-(3, 'kaprodi', 'kaprodi@gmail.com', 'default.png', '$2y$10$6LQ2WIqjd.3S6A2POrNhw.ipwiJc1Srk1rtvgLfim522vP2ZFTzTO', 2, 1, 1590929250, ''),
-(8, 'mosphieth', 'mosphieth@gmail.com', 'default.jpg', '$2y$10$akctQm9P4P0Y6jXAq/umkeT8LbBMbbdK1WS8qyJ2EeVcXxnX5wxPi', 2, 1, 1590935713, 'yf8RAiYWGr'),
-(11, 'Mosphy J', 'kevinjunico@gmail.com', 'default.jpg', '$2y$10$pN1FjXQYSCMUSuMeH1BXzezxqNNlZP62CTEyslYpCzzdxXV4rLYIi', 3, 1, 1592584356, 'Bvc1fWjQKS');
+(3, 'kaprodi', 'kaprodi@gmail.com', 'default.png', '$2y$10$6LQ2WIqjd.3S6A2POrNhw.ipwiJc1Srk1rtvgLfim522vP2ZFTzTO', 2, 1, 1590929250, '');
 
 -- --------------------------------------------------------
 
@@ -222,7 +212,7 @@ ALTER TABLE `file`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `user_access_menu`
